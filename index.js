@@ -21,7 +21,7 @@ app.use(bodyParser.urlencoded({ extended: true}));
 app.use('/api', apiRouter);
 
 
-app.listen(3000, (req, res) => {
+app.listen(process.env.LOCAL_HOST, (req, res) => {
     console.log('servidor arrancando!!');
     
 });
